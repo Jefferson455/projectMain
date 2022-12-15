@@ -1,0 +1,132 @@
+@font-face {
+    font-family: 'NewRocker';
+    src: url("../fonts/NewRocker-Regular/NewRocker-Regular.ttf");
+}
+
+body {
+    font-family: NewRocker;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+    margin: 0;
+    text-align: center;
+    padding-top: 10rem;
+}
+
+h1 {
+    font-size: 2rem;
+    line-height: 1.3em;
+}
+
+p {
+    margin-bottom: 1.6em;
+}
+
+.container {
+    width: 85%;
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+header {
+    background: #333;
+    color: white;
+    padding: 2rem;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 1;
+}
+
+header a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.logo-nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo {
+    background-image: url('../img/rockII.jpg');
+    background-size: 100%;
+    background-position: bottom center;
+    border-radius: 5px;
+    height: 4rem;
+    width: 12rem;
+}
+
+.nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.nav ul li {
+    display: inline-block;
+}
+
+.nav ul li a {
+    display: block;
+    padding: 0.5rem 1rem;
+    transition: all 0.5s linear;
+    border-radius: 5px;
+}
+
+.nav ul li a:hover {
+    background: #4a4a4a;
+}
+
+.span-menu-icon {
+    display: none;
+}
+
+.main {
+    padding-top: 12rem;
+}
+
+footer {
+    background: #f2f2f2;
+    padding: 0.1rem 0;
+    text-align: center;
+    margin-top: 12.8rem;
+}
+
+div.frase {
+    font-family: 'Estonia', cursive, bold-font;
+    text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+    .nav {
+        width: 100%;
+        margin-top: 1rem;
+    }
+    .span-menu-icon {
+        display: block;
+        cursor: pointer;
+    }
+    .nav ul {
+        display: none;
+    }
+    .nav ul.show {
+        display: block;
+    }
+    .nav ul li {
+        display: block;
+    }
+    .nav ul li a {
+        display: block;
+        padding: 0.5rem 0;
+        transition: all 0.5s linear;
+        border-radius: 5px;
+    }
+    .nav ul li a:hover {
+        background: #4a4a4a;
+    }
+}

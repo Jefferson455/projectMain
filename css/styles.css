@@ -1,0 +1,12 @@
+    body {
+        background-image: url("../img/couple.jpg");
+        background-size: 100%;
+        color: white;
+    }
+    
+    .container {
+        width: 100vw;
+        height: 100vh;
+        text-align: center;
+        padding-top: 300px;
+    }

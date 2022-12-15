@@ -1,0 +1,212 @@
+@font-face {
+    font-family: 'NewRocker';
+    src: url("../fonts/NewRocker-Regular/NewRocker-Regular.ttf");
+}
+
+body {
+    font-family: NewRocker;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+    margin: 0;
+    text-align: center;
+    padding-top: 1rem;
+}
+
+.container {
+    width: 85%;
+    max-width: 850px;
+    margin: 0 auto;
+    padding-top: -2px;
+}
+
+header {
+    background: #333;
+    color: white;
+    padding: 2rem;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+}
+
+header a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.logo-nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo {
+    background-image: url('../img/rockII.jpg');
+    background-size: 100%;
+    background-position: bottom center;
+    border-radius: 5px;
+    height: 4rem;
+    width: 12rem;
+}
+
+.nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.nav ul li {
+    display: inline-block;
+}
+
+.nav ul li a {
+    display: block;
+    padding: 0.5rem 1rem;
+    transition: all 0.5s linear;
+    border-radius: 5px;
+}
+
+.nav ul li a:hover {
+    background: #4a4a4a;
+}
+
+.span-menu-icon {
+    display: none;
+}
+
+.main {
+    padding-top: 9rem;
+}
+
+footer {
+    background: #f2f2f2;
+    padding: 0.1rem 0;
+    text-align: center;
+    margin-top: 15.5rem;
+    display: block;
+    flex: 0 0 auto;
+}
+
+.tname {
+    width: 3%;
+}
+
+.tcrud {
+    width: 3%;
+}
+
+.tdescripcion {
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    border: 1px solid #000;
+}
+
+th,
+td {
+    width: 25%;
+    text-align: center;
+    vertical-align: top;
+    border: 1px solid #000;
+    border-spacing: 0;
+}
+
+th {
+    background: rgb(216, 216, 216);
+}
+
+.cta {
+    display: inline-block;
+    background-color: rgb(204, 67, 67);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    width: 100px;
+}
+
+.act {
+    font-family: NewRocker;
+    font-size: 16px;
+    display: inline-block;
+    background-color: rgb(92, 92, 92);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    width: 100px;
+    border: none;
+    height: 25px;
+    cursor: pointer;
+}
+
+.a_pencil,
+.a_eye,
+.a_trash {
+    text-decoration: none;
+    color: black;
+}
+
+.table_container {
+    padding-top: 10px;
+}
+
+.input_table {
+    font-size: 13px;
+    font-family: NewRocker;
+    display: inline-block;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    width: 200px;
+    height: 25px;
+}
+
+.input_table_read {
+    font-size: 13px;
+    font-family: NewRocker;
+    display: inline-block;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    width: 200px;
+    background-color: #fff;
+}
+
+.container_table_update {
+    display: inline-block;
+    background-color: rgb(248 83 82);
+    width: 300px;
+    height: 350px;
+    border-radius: 5px;
+}
+
+.container_table_read {
+    display: inline-block;
+    background-color: rgb(138, 138, 138);
+    width: 300px;
+    height: 100%;
+    border-radius: 5px;
+}
+
+.btn_group {
+    padding-top: 30px;
+}
+
+.btn_read_cancel {
+    font-family: NewRocker;
+    font-size: 16px;
+    display: inline-block;
+    background-color: rgb(92, 92, 92);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    width: 100px;
+    border: none;
+    height: 25px;
+    cursor: pointer;
+    padding-bottom: 2;
+}

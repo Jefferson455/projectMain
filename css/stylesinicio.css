@@ -1,0 +1,38 @@
+@font-face {
+    font-family: 'NewRocker';
+    src: url("../fonts/NewRocker-Regular/NewRocker-Regular.ttf");
+}
+
+@font-face {
+    font-family: 'Estonia';
+    src: url("../fonts/Estonia/Estonia-Regular.ttf")
+}
+
+@font-face {
+    font-family: 'Robot';
+    src: url('../fonts/Roboto/Roboto-Black.ttf');
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+    padding-top: 200px;
+}
+
+body {
+    background-image: url("../img/fondo-guitar.jpg");
+    background-size: 100%;
+}
+
+h2.text-center {
+    font-family: NewRocker;
+    font-size: 100px;
+    color: #fff;
+}
+
+p.text-p {
+    font-family: Estonia;
+    color: #fff;
+    font-size: 60px;
+}
