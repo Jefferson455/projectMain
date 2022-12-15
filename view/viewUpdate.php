@@ -1,5 +1,5 @@
 <?php
-include('conexion/conexion.php');
+include('../conexion/conexion.php');
 $id = $_GET['id'];
 $query = "SELECT libro.idlibro, libro.nombre, libro.descripcion, libro.fk_idUsuarios, usuarios.nombre AS escrito_por 
               FROM libro 
@@ -18,9 +18,9 @@ $queryII = "SELECT idusuarios, nombre AS nameUser FROM usuarios";
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style-tables.css">
-    <link rel="stylesheet" href="css/style-modal.css">
-    <link rel="icon" type="image/jpg" href="img/heartII.png" />
+    <link rel="stylesheet" href="../css/style-tables.css">
+    <link rel="stylesheet" href="../css/style-modal.css">
+    <link rel="icon" type="image/jpg" href="../img/heartII.png" />
     <script src="https://kit.fontawesome.com/83c4baed2e.js" crossorigin="anonymous"></script>
     <title>Update</title>
 </head>
@@ -43,7 +43,7 @@ $queryII = "SELECT idusuarios, nombre AS nameUser FROM usuarios";
     <main class="main">
         <div class="container" id="phrase">
             <h1>Editando mi libro</h1>
-            <form action="update.php" method="post">
+            <form action="../controller/update.php" method="post">
                 <div class="container_table_update">
                     <?php $libro = mysqli_query($conexion, $query);
                     while ($row = mysqli_fetch_assoc($libro)) { ?>
@@ -74,7 +74,7 @@ $queryII = "SELECT idusuarios, nombre AS nameUser FROM usuarios";
             </form>
         </div>
     </main>
-    <script src="js/navMenu.js"></script>
+    <script src="../js/navMenu.js"></script>
 </body>
 <footer class="footer">
     <div class="container">

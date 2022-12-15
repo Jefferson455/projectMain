@@ -1,5 +1,5 @@
 <?php
-include('conexion/conexion.php');
+include('../conexion/conexion.php');
 $query = "SELECT libro.idlibro, libro.nombre, libro.descripcion, usuarios.nombre AS escrito_por 
               FROM libro 
               INNER JOIN usuarios 
@@ -19,9 +19,9 @@ $delete = "DELETE FROM libro
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style-tables.css">
-    <link rel="stylesheet" href="css/style-modal.css">
-    <link rel="icon" type="image/jpg" href="img/heartII.png" />
+    <link rel="stylesheet" href="../css/style-tables.css">
+    <link rel="stylesheet" href="../css/style-modal.css">
+    <link rel="icon" type="image/jpg" href="../img/heartII.png" />
     <script src="https://kit.fontawesome.com/83c4baed2e.js" crossorigin="anonymous"></script>
     <title>Para ti</title>
 </head>
@@ -63,7 +63,7 @@ $delete = "DELETE FROM libro
                             <td class="tname">
                                 <a href="viewRead.php?id=<?php echo $row["idlibro"]; ?>" class="a_eye"><i class="far fa-eye"></i></i></a>
                                 <a href="viewUpdate.php?id=<?php echo $row["idlibro"]; ?>" class="a_pencil"><i class="far fa-edit"></i></i></i></a>
-                                <a href="delete.php?id=<?php echo $row["idlibro"]; ?>" class="a_trash"><i class="far fa-trash-alt"></i></i></a>
+                                <a href="../controller/delete.php?id=<?php echo $row["idlibro"]; ?>" class="a_trash"><i class="far fa-trash-alt"></i></i></a>
                             </td>
 
                         </tr>
@@ -74,12 +74,12 @@ $delete = "DELETE FROM libro
             </div>
 
         </div>
-        <!-- MODAL PARA AGREGAR DATOS-->
+        <!-- MODAL for add data-->
         <div class="modal-container">
             <div class="modal modal-close">
                 <p class="close">x</p>
                 <div class="modal-textos">
-                    <form action="insertar.php" method="post">
+                    <form action="../controller/insertData.php" method="post">
                         <h1>Añade un nuevo libro <i class="fas fa-book-dead"></i></h1>
                         <p>Nombre del libro:</p>
                         <input type="text" name="nombre" placeholder="" class="input_modal" required><br>
@@ -131,10 +131,10 @@ $delete = "DELETE FROM libro
             </div>
         </div>
     </main>
-    <script src="js/navMenu.js"></script>
-    <script src="js/modalNew.js"></script>
-    <script src="js/modalRead.js"></script>
-    <script src="js/confirmDelete.js"></script>
+    <script src="../js/navMenu.js"></script>
+    <script src="../js/modalNew.js"></script>
+    <script src="../js/modalRead.js"></script>
+    <script src="../js/confirmDelete.js"></script>
 </body>
 <footer class="footer">
     <div class="container">

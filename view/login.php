@@ -11,7 +11,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/styleslogin.css">
+    <link rel="stylesheet" href="../css/styleslogin.css">
     <title>Login y registro</title>
 </head>
 
@@ -36,11 +36,12 @@
                     <h2>iniciar sesión</h2>
                     <input type="text" placeholder="correo electronico">
                     <input type="password" placeholder="Contraseña">
-                    <button>entrar</button>
+                    <!--<button >entrar</button>-->
+                    <a href="../view/menu.php">Ingresar</a>
                 </form>
 
                 <!--Formulario de registro-->
-                <form action="insertUser.php" class="formulario__register">
+                <form action="../controller/insertUser.php" class="formulario__register">
                     <h2>registrarse</h2>
                     <input name="nombre" type="text" placeholder="Nombre" required="">
                     <input name="usuario" type="text" placeholder="Usuario" required>
@@ -51,7 +52,7 @@
 
         </div>
     </main>
-    <script src="js/login.js"></script>
+    <script src="../js/login.js"></script>
 </body>
 
 </html>

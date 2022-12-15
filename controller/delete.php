@@ -1,5 +1,5 @@
 <?php
-include('conexion/conexion.php');
+include('../conexion/conexion.php');
 $id = $_GET['id'];
 $delete = "DELETE FROM libro
             WHERE libro.idlibro = '$id'";
@@ -7,7 +7,7 @@ $delete = "DELETE FROM libro
 $execute = mysqli_query($conexion, $delete);
 
 if ($execute == true) {
-    header("Location: parati.php");
+    header("Location: ../view/parati.php");
 } else {
     echo ('Error!');
 };

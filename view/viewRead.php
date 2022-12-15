@@ -1,5 +1,5 @@
 <?php
-include('conexion/conexion.php');
+include('../conexion/conexion.php');
 $id = $_GET['id'];
 $query = "SELECT libro.idlibro, libro.nombre, libro.descripcion, libro.fk_idUsuarios, usuarios.nombre AS escrito_por 
               FROM libro 
@@ -14,9 +14,9 @@ $query = "SELECT libro.idlibro, libro.nombre, libro.descripcion, libro.fk_idUsua
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style-tables.css">
-    <link rel="stylesheet" href="css/style-modal.css">
-    <link rel="icon" type="image/jpg" href="img/heartII.png" />
+    <link rel="stylesheet" href="../css/style-tables.css">
+    <link rel="stylesheet" href="../css/style-modal.css">
+    <link rel="icon" type="image/jpg" href="../img/heartII.png" />
     <script src="https://kit.fontawesome.com/83c4baed2e.js" crossorigin="anonymous"></script>
     <title>Update</title>
 </head>
@@ -52,13 +52,13 @@ $query = "SELECT libro.idlibro, libro.nombre, libro.descripcion, libro.fk_idUsua
                 mysqli_free_result($libro);
                     ?>
                     <div class="btn_group">
-                        <a href="parati.php" class="btn_read_cancel">Atrás</a>
+                        <a href="../parati.php" class="btn_read_cancel">Atrás</a>
                     </div>
                     </div>
                 </form>
         </div>
     </main>
-    <script src="js/navMenu.js"></script>
+    <script src="../js/navMenu.js"></script>
 </body>
 <footer class="footer">
     <div class="container">

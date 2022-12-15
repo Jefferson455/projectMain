@@ -1,5 +1,5 @@
 <?php
-include('conexion/conexion.php');
+include('../conexion/conexion.php');
 
 
 $idlibro = $_POST['idlibro'];
@@ -12,7 +12,7 @@ $update = "UPDATE libro SET nombre='$nombre', descripcion='$descripcion', fk_idU
 $ejecutado = mysqli_query($conexion, $update);
 
 if ($ejecutado == 1) {
-    header('location: parati.php');
+    header('location: ../parati.php');
 } else {
     echo 'Algo salio mal';
 }
