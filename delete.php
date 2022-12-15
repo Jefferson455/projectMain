@@ -2,7 +2,7 @@
 include('conexion/conexion.php');
 $id = $_GET['id'];
 $delete = "DELETE FROM libro
-              WHERE libro.idlibro = '$id'";
+            WHERE libro.idlibro = '$id'";
 
 $execute = mysqli_query($conexion, $delete);
 
