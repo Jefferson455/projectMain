@@ -67,7 +67,7 @@ $queryII = "SELECT idusuarios, nombre AS nameUser FROM usuarios";
                         ?>
                     </select>
                     <div class="btn_group">
-                        <a href="parati.php" class="act">Cancelar</a>
+                        <a href="../view/parati.php" class="act">Cancelar</a>
                         <input type="submit" Value="Actualizar" class="act">
                     </div>
                 </div>

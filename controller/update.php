@@ -12,7 +12,7 @@ $update = "UPDATE libro SET nombre='$nombre', descripcion='$descripcion', fk_idU
 $ejecutado = mysqli_query($conexion, $update);
 
 if ($ejecutado == 1) {
-    header('location: ../parati.php');
+    header('location: ../view/parati.php');
 } else {
     echo 'Algo salio mal';
 }
